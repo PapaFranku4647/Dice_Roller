@@ -26,10 +26,19 @@ body {
 
 .roll-button {
     border-radius: .5rem;
-    height: 2rem;
-    width: 4rem;
+    height: 3rem;
+    width: 6rem;
     background: pink;
     color: blueviolet;
     border-color: palevioletred;
     border-width: .15rem;
+}
+
+.outheader {
+    color: whitesmoke;
+    font-size: 1.5rem;
+}
+
+.output {
+    color: wheat;
 }
