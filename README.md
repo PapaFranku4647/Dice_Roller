@@ -6,4 +6,4 @@
 
 ### want to roll it, it then outputs the results of each
 
-### roll.
+### roll!
