@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 class="header">Roll The Dice...</h1>
+    <div>
+        <form id="inputform" onsubmit="input_handler(); return false">
+            <label for="num-rolls">How Many Rolls: </label>
+            <input type="number" id="roll-input-id" value=3 name="roll-input-name"><br><br>
+            <label for="dice-sides-label">How Many Sides:</label>
+            <select name="dice-sides-name" id="dice-sides-id" class="dice-sides-class">
+                <option value="4">4</option>
+                <option value="6" selected>6</option>
+                <option value="8">8</option>
+                <option value="10">10</option>
+                <option value="12">12</option>
+                <option value="20">20</option>
+            </select>
+            <button type="submit">
+                Roll It
+            </button>
+
+        </form>
+
+    </div>
+    <div>
+        <h>Results: </h>
+        <output name="output"></output>
+    </div>
+    <script>
+        function input_handler() {
+            var formEl = document.forms.inputform;
+            var formData = new FormData(formEl);
+            var rolls = parseInt(formData.get('roll-input-name'));
+            var sides = parseInt(formData.get('dice-sides-name'));
+            var return_outputs = [];
+            for (var i = 0; i < rolls; i++) {
+                return_outputs.push(Math.floor(Math.random() * sides) + 1);
+            }
+            console.log(document.getElementsByName('output')[0].innerText = return_outputs);
+        }  
+    </script>
+
+</body>
+
+</html>
