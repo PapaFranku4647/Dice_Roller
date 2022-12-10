@@ -1,0 +1,35 @@
+body {
+    background-color: rgb(95, 95, 95);
+}
+
+.header
+{
+    font-family: sans-serif;
+    color: rgb(0, 17, 255);
+    -webkit-text-stroke: 0.05rem black;
+}
+
+.dice-sides-class {
+    border: none;
+    border-radius: 4px;
+    background-color: lightcyan;
+}
+
+.roll-input-class {
+    border: none;
+    border-radius: 4px;
+    background-color: lightcyan;
+}
+.roll-input-class:focus {
+    background-color: lightblue;
+}
+
+.roll-button {
+    border-radius: .5rem;
+    height: 2rem;
+    width: 4rem;
+    background: pink;
+    color: blueviolet;
+    border-color: palevioletred;
+    border-width: .15rem;
+}
